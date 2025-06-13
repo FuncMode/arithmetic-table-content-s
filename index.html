@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arithmetic table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- multiplication table -->
+    <div class="spinner"></div>
+    <h1>- ARITHMETIC TABLE -</h1>
+<div class="main-content">
+    <div>
+        <p id="firstInput">Enter the (base) number (table) to multiply/divide/add/subtract up to:</p>
+        <input title="number" type="number" min="0" id="baseNumber">
+    </div>
+    <div>
+        <p>Select the arithmetic operator for the table:</p>
+        <select title="arithmetic operators" id="arithmetic">
+            <option value="+">Addition ( + )</option>
+            <option value="-">Subtraction ( − )</option>
+            <option value="/">Division ( ÷ )</option>
+            <option value="*">Multiplication ( × )</option>
+        </select>
+    </div>
+    <div>
+        <p>Enter the (maximum) number to multiply/divide/add/subtract up to:</p>
+        <input title="number" type="number" min="0" id="maximumNumber">
+    </div>
+    <button title="button" id="btn">Generate Table</button>
+</div>
+    <div class="parent-table">
+        <h1 id="content"></h1>
+        <div class="child-table"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
